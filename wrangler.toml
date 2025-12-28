@@ -3,10 +3,9 @@ main = "worker.js"
 compatibility_date = "2024-01-01"
 
 # KV 네임스페이스 바인딩
-"kv_namespaces": [{
-                    "binding": "KV_BINDING",
-                    "id": "55ea199daf1b46f1b7869d544ed10c36"
-                 }]
+kv_namespaces = [
+  { binding = "domain-register-api", id = "55ea199daf1b46f1b7869d544ed10c36", preview_id = "YOUR_PREVIEW_KV_ID" }
+]
 
 # 환경 변수 (Cloudflare 대시보드에서 설정)
 # CF_API_TOKEN = "your-cloudflare-api-token"
