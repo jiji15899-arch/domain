@@ -1,0 +1,16 @@
+{
+  "name": "free-domain-service",
+  "version": "1.0.0",
+  "description": "무료 도메인 제공 플랫폼",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "publish": "wrangler publish"
+  },
+  "keywords": ["domain", "dns", "cloudflare"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
