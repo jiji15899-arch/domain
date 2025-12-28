@@ -1,0 +1,22 @@
+name = "domain-service"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# KV 네임스페이스 바인딩
+"kv_namespaces": [{
+                    "binding": "KV_BINDING",
+                    "id": "55ea199daf1b46f1b7869d544ed10c36"
+                 }]
+
+# 환경 변수 (Cloudflare 대시보드에서 설정)
+# CF_API_TOKEN = "your-cloudflare-api-token"
+# CF_ZONE_ID = "your-zone-id"
+
+[env.production]
+name = "domain-service"
+route = "yourdomain.com/api/*"
+
+# Workers 라우트
+routes = [
+  { pattern = "yourdomain.com/api/*", zone_name = "yourdomain.com" }
+]
